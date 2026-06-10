@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Line Sustentável - Quiz Agrinho x One Piece</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>AGRINHO <span>× ONE PIECE</span></h1>
+            <p>Rumo ao título de Rei do Agro Sustentável!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="tela-inicial" class="card-pirata text-center">
+            <h2>Navegando pelo Futuro do Campo!</h2>
+            <p>Luffy e sua tripulação precisam cruzar a Grand Line ajudando os povos a produzir alimentos sem destruir as ilhas e as florestas. Você está pronto para este desafio ecológico?</p>
+            <button id="btn-iniciar" class="btn-procurado" onclick="iniciarQuiz()">Zarpar Navio! 🏴‍☠️</button>
+        </section>
+
+        <section id="tela-jogo" class="card-pirata escondido">
+            <div class="status-jogo">
+                <span id="contador-perguntas">Ilha 1 de 5</span>
+                <span id="pontuacao-atual">Recompensa: 0 Berries</span>
+            </div>
+            
+            <div class="barra-oceano">
+                <div id="progresso-navio">⛵</div>
+            </div>
+
+            <h3 id="texto-pergunta">Aqui ficará o mistério da ilha...</h3>
+
+            <div id="opcoes-container" class="grid-cartazes">
+                </div>
+
+            <div id="feedback" class="feedback escondido"></div>
+
+            <button id="btn-proxima" class="btn-procurado escondido" onclick="proximaPergunta()">Próxima Ilha ➔</button>
+        </section>
+
+        <section id="tela-resultado" class="card-pirata text-center escondido">
+            <h2>Fim da Jornada!</h2>
+            <div id="recompensa-revelada" class="recompensa-box">
+                <p>Sua recompensa final é:</p>
+                <div id="valor-berries">0</div>
+            </div>
+            <p id="mensagem-final">O que o bando achou de você?</p>
+            <button class="btn-procurado" onclick="reiniciarQuiz()">Navegar Novamente 🔄</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Concurso de Programação do Agrinho. "Agro forte, futuro sustentável" no estilo dos Chapéus de Palha.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
